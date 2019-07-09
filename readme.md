@@ -1,0 +1,1 @@
+This is demo like week 1 but with mobile responsive support

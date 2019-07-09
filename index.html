@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+      <title>My Awesome E-Commerce</title> 
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/menu.css">
+      <link rel="stylesheet" href="css/content.css">
+      <link rel="stylesheet" href="css/footer.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="main-logo">
+          <img id="logo" src="images/2359.png" height="75px">
+          <div class="company-name">2359</div>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <label for="toggle-menu-cb" class="toggle-menu">Menu</label>
+        <input type="checkbox" id="toggle-menu-cb" />
+
+        <ul class="main-menu">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/about.html" class="parent-menu">About</a>
+            <input type="checkbox" id="about-cb" />
+            <label for="about-cb" class="drop-icon"></label>
+            <ul class="sub-menu">
+              <li>
+                <a href="#" class="parent-menu">History</a>
+                <input type="checkbox" id="history-cb" />
+                <label for="history-cb" class="drop-icon"></label>
+                <ul class="sub-menu">
+                  <li><a href="/orde-lama.html">Orde lama</a></li>
+                  <li><a href="/orde-baru.html">Orde baru</a></li>
+                  <li><a href="/reformasi.html">Orde reformasi</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Vision</a></li>
+            </ul>
+          </li>
+          <li><a href="/product.html">Product</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="clear:both"></div>
+    </div>
+
+    <div class="main-content">
+      <div class="img-placeholder">
+          <img class="main-img" src="http://images.unsplash.com/photo-1500322969630-a26ab6eb64cc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" />
+      </div>
+
+      <a href="/contact.html" class="contact-btn-link">
+        <div class="contact-btn">
+          Contact Us
+        </div>
+      </a>
+    </div>
+
+    <div class="footer">
+        &copy; 2019
+    </div>
+
+    
+  </body>
+</html>

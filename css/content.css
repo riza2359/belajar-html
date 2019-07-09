@@ -1,0 +1,61 @@
+.main-content {
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.img-placeholder {
+  overflow: hidden;
+}
+
+.main-img {
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  position: relative;
+  left: 100%;
+  margin-left: -200%;
+}
+
+.main-img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.contact-btn {
+  font-size: 3rem;
+  color: #ffffff;
+  background: #1bc2a1;
+  border-radius: 1rem;
+  width: 40%;
+  margin: 1rem auto;
+}
+
+.contact-btn-link {
+  text-decoration: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+    margin-top: 0;
+  }
+  
+  .main-img {
+    filter: none;
+    -webkit-filter: none;
+  }
+
+  .contact-btn {
+    font-size: 2rem;
+    color: #ffffff;
+    background: #1bc2a1;
+    border-radius: 1rem;
+    width: 60%;
+    margin: 1rem auto;
+  }
+}

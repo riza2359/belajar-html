@@ -1,0 +1,118 @@
+.main-nav input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-menu li,
+.main-menu a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.main-menu a {
+  text-decoration: none;
+}
+
+.main-menu .sub-menu {
+  border-width: 1px 1px 0;
+  display: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .toggle-menu {
+    height: 75px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #555;
+    font-size: 2rem;
+  }
+
+  #toggle-menu-cb:checked + .main-menu {
+    display: block;
+    width: 100%;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .main-menu li,
+  .main-menu a {
+    display: block;
+    padding: 0.25rem;
+  }
+
+  a.parent-menu {
+    display: inline-block !important;
+  }
+  
+  .main-menu input[type="checkbox"]:checked + .drop-icon::before {
+    content: "\25BC";
+  }
+  
+  .main-menu input[type="checkbox"]:checked + label + .sub-menu {
+    display: block;
+  }
+
+  .main-menu .sub-menu {
+    margin: 0 1rem;
+  }
+
+  .drop-icon::before {
+    content: "\25B6";
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .main-menu > li {
+    float: left;
+  }
+
+  .main-menu li:hover > input[type="checkbox"] + label + .sub-menu {
+    display: block;
+  }
+
+  ul li a {
+    display: flex;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #ffffff;
+    align-items: center;
+    height: 75px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+
+  li:hover a {
+    background: #555;
+  }
+
+  li:hover li a:hover {
+    background: #2c3e50;
+  }
+
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+}
